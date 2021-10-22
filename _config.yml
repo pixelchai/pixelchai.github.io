@@ -1,15 +1,15 @@
-title: Pixelzery
+title: Pozogo
 description: ""
 
 author:
-  name:    Pixelzery
-  twitter: pixelzery
-  github:  pixelzery
-  email:   pixelzery@gmail.com
+  name:    Pozogo
+  twitter: ppozogo
+  github:  pozogo
+  email:   ppozogo@gmail.com
 
 baseurl: ""
-url: "http://pixelzery.github.io"
-gh: "http://github.com/pixelzery"
+url: "http://pozogo.github.io"
+gh: "http://github.com/pozogo"
 
 defaultimage: "/assets/images/default.jpg"
 
@@ -17,10 +17,10 @@ permalink: /:categories/:title/
 
 # seo
 social:
-  name: Pixelzery
+  name: Pozogo
   links:
-    - https://twitter.com/pixelzery
-    - https://github.com/pixelzery
+    - https://twitter.com/ppozogo
+    - https://github.com/pozogo
 
 # Build stuff:
 markdown: kramdown
