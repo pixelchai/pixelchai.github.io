@@ -1,15 +1,15 @@
-title: Pozogo
+title: Pixelchai
 description: ""
 
 author:
-  name:    Pozogo
+  name: Pixelchai
   twitter: ppozogo
-  github:  pozogo
-  email:   ppozogo@gmail.com
+  github: pixelchai
+  email: pixelchai@gmx.com
 
 baseurl: ""
-url: "http://pozogo.github.io"
-gh: "http://github.com/pozogo"
+url: "http://pixelchai.github.io"
+gh: "http://github.com/pixelchai"
 
 defaultimage: "/assets/images/default.jpg"
 
@@ -17,10 +17,10 @@ permalink: /:categories/:title/
 
 # seo
 social:
-  name: Pozogo
+  name: Pixelchai
   links:
     - https://twitter.com/ppozogo
-    - https://github.com/pozogo
+    - https://github.com/pixelchai
 
 # Build stuff:
 markdown: kramdown
@@ -39,8 +39,7 @@ collections:
     output: true
 
 defaults:
-  -
-    scope:
+  - scope:
       path: ""
       type: category
     values:

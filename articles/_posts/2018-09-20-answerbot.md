@@ -6,13 +6,13 @@ image: /passets/5/demo3.png
 displaybox-syle: normal
 displaybox-yt: 8yQCvzhGDkk
 links:
-  - GitHub Page: https://github.com/PixelZerg/AnswerBot
+  - GitHub Page: https://github.com/pixelchai/AnswerBot
   - Video: https://www.youtube.com/watch?v=8yQCvzhGDkk
 redirect_from:
     - "/projects/answerbot/"
 ---
 
-Is it possible to parse a natural language (plain English) question and gather relevant information for it from the internet using Natural Language Processing techniques? AnswerBot is the answer. [Code can be found here](https://github.com/makurell/AnswerBot).
+Is it possible to parse a natural language (plain English) question and gather relevant information for it from the internet using Natural Language Processing techniques? AnswerBot is the answer. [Code can be found here](https://github.com/pixelchai/AnswerBot).
 
 AnswerBot is, put simply, a search engine. You input a question, it parses it using the NLP techniques of Part-Of-Speech tagging and dependency parsing and then searches through Wikipedia, making use of semantic similarity calculations, to gather information to answer the input. The NLP functionalities just mentioned are provided by the Python library, [SpaCy](https://spacy.io/).
 
@@ -79,7 +79,7 @@ The parsing works using a function, in which an input `Token` has all of its [de
 
 The recursion is initiated with the [root token](#dependency-parsing) of a certain query (which is a `Span` object).
 
-[View code](https://github.com/makurell/AnswerBot/blob/master/answerbot.py#L99){: target="_blank"}
+[View code](https://github.com/pixelchai/AnswerBot/blob/master/answerbot.py#L99){: target="_blank"}
 
 # Variations Generation
 
@@ -89,7 +89,7 @@ Note on terminology: I call a group of `terms` a `group`. And a list of these `g
 
 When searching for pages relevant to the parsed terms, we want to consider the different groupings of the terms for a fuller picture. E.g: both `[["animal"], ["biggest"]] ` and `[["animal", "biggst"]] `. (What if there was a page relating to ‘’biggest animals” directly?). Note: the structure is now a list __of groups__ of terms.
 
-First of all, everything is grouped together into a list, then that list is split at every possible position. The spaces in-between items can be thought of ‘split positions’ or ‘places to put a comma’. Let’s say that $$1$$ means to split and $$0$$ to not. The ways of splitting, then, is simply the binary pattern up to $$2^{n-1}-1$$ where $$n​$$ is the length of the list. This is how where to split is decided. [View code](https://github.com/makurell/AnswerBot/blob/master/answerbot.py#L174){: target="_blank"}.
+First of all, everything is grouped together into a list, then that list is split at every possible position. The spaces in-between items can be thought of ‘split positions’ or ‘places to put a comma’. Let’s say that $$1$$ means to split and $$0$$ to not. The ways of splitting, then, is simply the binary pattern up to $$2^{n-1}-1$$ where $$n​$$ is the length of the list. This is how where to split is decided. [View code](https://github.com/pixelchai/AnswerBot/blob/master/answerbot.py#L174){: target="_blank"}.
 
 ### Example:
 
@@ -130,7 +130,7 @@ a,b,c,d
 
 For every grouping of the terms, we also want to consider all the different ways of ordering them too. E.g: `[["country"], ["home"]]` should be considered as well as `[["home"], ["country"]]`.
 
-This is done using the standard-library `itertools`‘s `permutation` function. [View code](https://github.com/makurell/AnswerBot/blob/master/answerbot.py#L204).
+This is done using the standard-library `itertools`‘s `permutation` function. [View code](https://github.com/pixelchai/AnswerBot/blob/master/answerbot.py#L204).
 
 # Searching
 
@@ -189,7 +189,7 @@ Where $$p(..)$$ is the parsing algorithm, that returns a list of keywords of len
 
 # Demonstration
 
-A demonstration of the final program running. [You can find it here](https://github.com/makurell/AnswerBot).
+A demonstration of the final program running. [You can find it here](https://github.com/pixelchai/AnswerBot).
 
 {% include youtube id='8yQCvzhGDkk' %}
 

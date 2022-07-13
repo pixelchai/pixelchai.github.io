@@ -8,7 +8,7 @@ displaybox-syle: normal
 video:
   - "/passets/12/minesweeper-cropped.mp4"
 links:
-  - Code: https://github.com/PixelZerg/Casio-Python/blob/master/mines.py 
+  - Code: https://github.com/pixelchai/Casio-Python/blob/master/mines.py 
 ---
 
 The Python available on the fx-CG50 is relatively limited while at the same time also being quite powerful. It runs MicroPython v1.9.4 but, quoting its [manual](https://support.casio.com/storage/en/manual/pdf/EN/004/fx-CG50_Soft_v320_EN.pdf): "_does not support all of the functions, commands, modules, and libraries of MicroPython_". Actually it seems to only support two modules: `math` and `random`.
@@ -31,7 +31,7 @@ There's a link at the top of this page that says "Code". You can just copy it fr
 
 ```
 > cd /tmp
-> wget https://raw.githubusercontent.com/PixelZerg/Casio-Python/master/mines.py
+> wget https://raw.githubusercontent.com/pixelchai/Casio-Python/master/mines.py
 ```
 
 #### 2) Put it onto the Calculator

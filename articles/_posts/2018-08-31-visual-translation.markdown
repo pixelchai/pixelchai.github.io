@@ -237,7 +237,7 @@ As you can see, there's just a section for the kanji, one for roumaji and one fo
 
 Also, the translation section is marked out with {% raw %}`{% translate %}`{% endraw %} and {% raw %}`{% endtranslate %}`{% endraw %} which very much looks like Jekyll's liquid syntax (this site was made with the help of Jekyll btw) because why not.
 
-I made a preprocessor to expand out this syntax in python, and made it run whenever I make changes to my [other website](//makurell.github.io/translation), where I am thinking of translating stuff, which will very much use this highlighting system.
+I made a preprocessor to expand out this syntax in python, and made it run whenever I make changes to my [other website](//pixelchai.github.io/translation), where I am thinking of translating stuff, which will very much use this highlighting system.
 
 Why didn't I just make a Jekyll plugin? Well because GitHub Pages doesn't allow that (lol let's be real - it's just because I don't really know Ruby and couldn't be bothered to write one in Ruby tbh)
 
@@ -361,7 +361,7 @@ else:
 ```
 {% endraw %}
 
-Well that's what it looks like right now. I'll probably change it a lot soon. The actual script can be found in [the source code to my other website](https://github.com/makurell/translation/blob/master/preprocess.py).
+Well that's what it looks like right now. I'll probably change it a lot soon. The actual script can be found in [the source code to my other website](https://github.com/pixelchai/translation/blob/master/preprocessor.py).
 
 The way I made it reprocess the files every time it is modified (to help when making content) is by using [watchdog](https://github.com/gorakhargosh/watchdog) - the command line utility `watchmedo` to be specific.
 
@@ -373,4 +373,4 @@ start "watchmedo" "shell-command -w -R -c""python preprocess.py ${watch_src_path
 start "jekyll" "serve --host=0.0.0.0 --drafts"
 ```
 
-That's about it. Thanks for reading. You can find my full translation of that song I was talking about and other cool stuff on that website if you're into that kind of thing. [Click here](///makurell.github.io/translation/enn-chata/).
+That's about it. Thanks for reading. You can find my full translation of that song I was talking about and other cool stuff on that website if you're into that kind of thing. [Click here](///pixelchai.github.io/translation/enn-chata/).

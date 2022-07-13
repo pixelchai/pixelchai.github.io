@@ -10,7 +10,7 @@ video:
   - "/passets/8/video.mp4"
   - "/passets/8/video.webm"
 links:
-  - GitHub Page: https://github.com/PixelZerg/Pong
+  - GitHub Page: https://github.com/pixelchai/Pong
   - Related Note: /notes/movement/
 ---
 

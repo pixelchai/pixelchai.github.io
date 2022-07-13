@@ -10,7 +10,7 @@ redirect_from:
     - "/web/this-website/"
 ---
 
-This website is hand-crafted from scratch with the help of [Jekyll](https://jekyllrb.com/) for the templating, [jQuery](https://jquery.com/) for the javascript stuff, a little bit of help from [Modernizr](https://modernizr.com/) for backwards-compatibility and is styled with [Sass](https://sass-lang.com/). There is very little external code or styling that is not written by myself and no starting theme was used - thus the lightweight-ness of this website as can be seen today. Source code is available in [this website's GitHub repo]({{site.gh}}/makurell.github.io).
+This website is hand-crafted from scratch with the help of [Jekyll](https://jekyllrb.com/) for the templating, [jQuery](https://jquery.com/) for the javascript stuff, a little bit of help from [Modernizr](https://modernizr.com/) for backwards-compatibility and is styled with [Sass](https://sass-lang.com/). There is very little external code or styling that is not written by myself and no starting theme was used - thus the lightweight-ness of this website as can be seen today. Source code is available in [this website's GitHub repo]({{site.gh}}/pixelchai.github.io).
 
 In the past 10 days of work on this website since its conception, a total of 94 commits were made and a _lot_ of styling was done. Above is a visualisation of the commits pushed, showing the progression of the website during this time.
 

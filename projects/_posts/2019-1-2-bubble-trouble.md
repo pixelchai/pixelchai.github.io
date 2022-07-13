@@ -9,8 +9,8 @@ video:
   - "/passets/11/bubb.webm"
   - "/passets/11/bubb.mp4"
 links:
-  - GitHub Page: https://github.com/PixelZerg/bubbletrouble
-  - Play Here: https://pixelzerg.github.io/bubbletrouble/
+  - GitHub Page: https://github.com/pixelchai/bubbletrouble
+  - Play Here: https://pixelchai.github.io/bubbletrouble/
 ---
 
 More info coming soon...
