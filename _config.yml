@@ -24,6 +24,7 @@ social:
 
 # Build stuff:
 markdown: kramdown
+  math_engine: katex
 plugins:
   - jekyll-feed
   - jekyll-sitemap
