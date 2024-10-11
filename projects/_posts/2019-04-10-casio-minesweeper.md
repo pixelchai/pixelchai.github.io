@@ -2,13 +2,13 @@
 title: Casio Minesweeper
 description: Minesweeper written in MicroPython for the Casio fx-CG50 graphical calculator
 layout: post
-feature: true
+feature: false
 thumb: /passets/12/thumb.gif
 displaybox-syle: normal
 video:
   - "/passets/12/minesweeper-cropped.mp4"
 links:
-  - Code: https://github.com/pixelchai/Casio-Python/blob/master/mines.py 
+  - Code: https://github.com/pixelchai/Casio-Python/blob/master/mines.py
 ---
 
 The Python available on the fx-CG50 is relatively limited while at the same time also being quite powerful. It runs MicroPython v1.9.4 but, quoting its [manual](https://support.casio.com/storage/en/manual/pdf/EN/004/fx-CG50_Soft_v320_EN.pdf): "_does not support all of the functions, commands, modules, and libraries of MicroPython_". Actually it seems to only support two modules: `math` and `random`.
@@ -18,15 +18,18 @@ Notably, it doesn't have the `time` module (or `utime` since we're talking about
 With these, and other various limitations in mind, adopting a slightly more succinct coding style, I made the minesweeper program you see above.
 
 Some other notable limitations:
+
 - Cannot hook keys (user input done through `input()`)
-    - means that the enter button must be pressed after each key press
+  - means that the enter button must be pressed after each key press
 - No colour, graphics, etc
 - No arbitrary positioning of printing cursor
 
 ## Installation
+
 Commands here, when given, will be Linux shell commands - but it shouldn't be too hard to follow on other platforms. It's literally just downloading a file and moving it onto the calculator by USB.
 
 #### 1) Get the code
+
 There's a link at the top of this page that says "Code". You can just copy it from there and paste it into a file in some temporary directory called `mines.py`.
 
 ```
@@ -35,6 +38,7 @@ There's a link at the top of this page that says "Code". You can just copy it fr
 ```
 
 #### 2) Put it onto the Calculator
+
 Connect the calculator to your PC with the USB cable that came with the calculator.
 
 ![](/passets/12/1.jpg)
@@ -61,6 +65,7 @@ If you did that right, the calculator should look like this:
 Press `EXIT` as it says to, then go to the `MENU` and select the Python option. You should now see `mines.py` listed (as in the video above). Select it and press `F1` to run it.
 
 ## Usage
+
 If you followed the installation procedure above correctly, you should be able to run the program.
 
 In the program, you will have a cursor, marked by an `X`. You can move it around and the viewport will pan around as required too. You can put down a flag at the cursor's position or check the tile too.

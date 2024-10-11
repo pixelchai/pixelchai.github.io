@@ -2,7 +2,7 @@
 title: Bubble Trouble
 description: Bubble Trouble remake in pure JavaScript
 layout: post
-feature: true
+feature: false
 thumb: /passets/11/thumb.png
 displaybox-syle: normal
 video:
